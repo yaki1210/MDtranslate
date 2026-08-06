@@ -33,6 +33,10 @@
 
 Type Markdown into Google Translate. When the source text is detected as Markdown, a compact `MD` toggle appears in the page header — click it to show / hide the Markdown preview of the translated result.
 
+## 截图 / Screenshots
+
+![Google 翻译页面上的 Markdown 预览面板 / Markdown preview panel on Google Translate](assets/demo.png)
+
 ## 技术要点 / Technical Notes
 
 - 采用启发式方法定位翻译结果区域（Google 翻译页面结构经常变化）
