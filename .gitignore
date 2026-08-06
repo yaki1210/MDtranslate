@@ -1,0 +1,13 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Packaged extensions
+*.crx
+*.zip
+
+# Personal / local settings
+.claude/
+
+# Internal design docs (not published)
+project_overview.md

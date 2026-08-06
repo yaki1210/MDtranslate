@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Markdown Preview Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="opt-shell">
+      <section class="opt-card">
+        <div class="opt-hero">
+          <p class="opt-kicker">Google Translate Markdown Preview</p>
+          <h1>Preview Settings</h1>
+          <p class="opt-copy">Adjust typography, accent color, and the default floating window size.</p>
+        </div>
+
+        <form id="settings-form" class="opt-form">
+          <label class="opt-field">
+            <span>Preview Font</span>
+            <select name="fontFamily">
+              <option value='Georgia, "Noto Serif SC", "Times New Roman", serif'>Serif</option>
+              <option value='"Segoe UI", "PingFang SC", sans-serif'>Sans</option>
+              <option value='"Source Code Pro", Consolas, monospace'>Monospace</option>
+            </select>
+          </label>
+
+          <label class="opt-field">
+            <span>UI Font</span>
+            <select name="uiFontFamily">
+              <option value='"Segoe UI", "PingFang SC", sans-serif'>System Sans</option>
+              <option value='"Trebuchet MS", "PingFang SC", sans-serif'>Trebuchet</option>
+              <option value='"Aptos", "Segoe UI", sans-serif'>Aptos</option>
+            </select>
+          </label>
+
+          <label class="opt-field">
+            <span>Font Size</span>
+            <input type="range" name="fontSize" min="14" max="22" step="1" />
+            <output data-for="fontSize"></output>
+          </label>
+
+          <label class="opt-field">
+            <span>Line Height</span>
+            <input type="range" name="lineHeight" min="1.4" max="2" step="0.05" />
+            <output data-for="lineHeight"></output>
+          </label>
+
+          <label class="opt-field">
+            <span>Default Width</span>
+            <input type="range" name="windowWidth" min="320" max="1280" step="10" />
+            <output data-for="windowWidth"></output>
+          </label>
+
+          <label class="opt-field">
+            <span>Default Height</span>
+            <input type="range" name="windowHeight" min="180" max="1280" step="10" />
+            <output data-for="windowHeight"></output>
+          </label>
+
+          <label class="opt-field">
+            <span>Accent</span>
+            <input type="color" name="accentColor" />
+          </label>
+
+          <div class="opt-actions">
+            <button type="submit" class="opt-button">Save</button>
+            <button type="button" class="opt-button is-secondary" id="reset-button">Reset</button>
+            <span id="save-status" class="opt-status"></span>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Google Translate Markdown Preview",
+  "version": "0.1.0",
+  "description": "Render Google Translate results as Markdown preview when the source text looks like Markdown.",
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://translate.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
